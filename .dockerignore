@@ -1,0 +1,32 @@
+# Git・エディタ・IDE関連
+.git
+.gitignore
+.vscode
+.antigravity
+env.yaml
+
+# コンソール版・テスト用の別コンパイル出力先（イメージには不要）
+bin/
+console-classes/
+test-classes/
+
+# テストコード自体（実行時イメージには不要）
+test/
+
+# DDLはNeonへの手動適用専用。実行時イメージには不要
+ddl/
+
+# ローカルでコンパイルした古いクラスファイル
+# （Dockerfile内でコンテナ内ビルドしたものに必ず差し替えるため、
+#   コピーするだけ無駄で、事故防止のためそもそも持ち込まない）
+webapp/WEB-INF/classes/
+
+# ドキュメント類
+*.md
+*.txt
+*.log
+
+#その他
+build/
+target/
+*.zip

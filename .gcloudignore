@@ -1,0 +1,29 @@
+# Cloud Runへのソースアップロード時に除外するファイル。
+# .gitignoreがH:ドライブ上で読み取り不可になっているため、
+# gcloudにそちらを参照させず、こちらを優先させる目的で作成。
+
+.git
+.gitignore
+.vscode
+.antigravity
+env.yaml
+
+# コンソール版・テスト用の別コンパイル出力先
+bin/
+console-classes/
+test-classes/
+
+# テストコード自体
+test/
+
+# DDLはNeonへの手動適用専用
+ddl/
+
+# ローカルでコンパイルした古いクラスファイル
+webapp/WEB-INF/classes/
+
+# ドキュメント類
+*.md
+
+# フォルダ類
+.gitignore/
